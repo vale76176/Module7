@@ -47,16 +47,16 @@ while menu_choice != 5:
         print("Remove User")
         name = input("Name: ")
         if name in usernames:
-            pass  # delete that entry
+            del usernames[name]
 
     # view user name
     elif menu_choice == 4:
         print("Lookup User")
         name = input("Name: ")
         if name in usernames:
-            pass  # print the username
+            print(usernames[name])
         else:
-            pass  # print username not found
+            print("User not found")
 
     # is user enters something strange, show them the menu
     elif menu_choice != 5:
